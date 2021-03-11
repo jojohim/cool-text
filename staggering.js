@@ -17,9 +17,9 @@
 window.addEventListener("DOMContentLoaded", start);
 
 function start() {
-  const text = document.querySelector(".letters").textContent;
-  const container = document.querySelector(".letters");
-  document.querySelector(".letters").textContent = "";
+  const text = document.getElementById("text").textContent;
+  const container = document.getElementById("text");
+  document.getElementById("text").textContent = "";
   displayText(text, container);
 }
 
@@ -46,7 +46,6 @@ function displayText(text, container) {
         spanElement.classList.add("letters");
         spanElement.style.setProperty("--delay", i);
         container.append(spanElement);
-  
     }
   }
 }

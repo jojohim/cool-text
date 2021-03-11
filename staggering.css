@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.container{
+#text{
     margin: 0 auto;
     display: flex;
 }
@@ -10,7 +10,9 @@
 .letters{
     --delay: 0;
     animation-delay: calc(var(--delay) * 0.1s);
-    animation: fade-in 1s cubic-bezier(.48,.71,.67,1.52);
+    animation-name: fade-in;
+    animation-duration: 1s;
+    transition-timing-function: cubic-bezier(.48,.71,.67,1.52);
     animation-fill-mode: both;
 }
 
